@@ -494,3 +494,25 @@ body {
         text-align: center;
     }
 }
+
+/* To make main image as a slider */
+/* Hero slider */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slide.active {
+    opacity: 1;
+}

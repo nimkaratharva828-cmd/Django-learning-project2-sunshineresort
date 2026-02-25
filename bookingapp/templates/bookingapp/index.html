@@ -34,7 +34,12 @@
     
     <!-- Section 2: Hero Image with Booking Bar -->
     <div class="hero-container">
-        <img src="{% static 'images/flash_8.jpg' %}" alt="Resort Image" class="main-image">
+        <div class="hero-slider">
+            <img src="{% static 'images/flash_8.jpg' %}" class="slide active">
+            <img src="{% static 'images/ig2.jpg' %}" class="slide">
+            <img src="{% static 'images/ig3.jpg' %}" class="slide">
+            <img src="{% static 'images/ig4.jpg' %}" class="slide">
+        </div>
 
         <div class="booking-bar">
             <div class="booking-field">
@@ -249,6 +254,18 @@
     document.querySelectorAll(".accordion-content").forEach((c, i) => {
         c.style.display = i === 0 ? "block" : "none";
     });
+
+    // Hero slider functionality
+    const slides = document.querySelectorAll(".hero-slider .slide");
+    let currentSlide = 0;
+
+    setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }, 4000); // 4 seconds
+
+
 </script>
 </body>
 </html>
