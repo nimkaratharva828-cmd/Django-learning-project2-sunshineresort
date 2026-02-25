@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sunshine Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    
+    <!-- Section 1: Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Sunshine Resort">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="cta">
+            <a href="#" class="book-btn">Book Now</a>
+        </div>
+    </nav>
+
+    
+    <!-- Section 2: Hero Image with Booking Bar -->
+    <div class="hero-container">
+        <img src="{% static 'images/flash_8.jpg' %}" alt="Resort Image" class="main-image">
+
+        <div class="booking-bar">
+            <div class="booking-field">
+                <label>Check In</label>
+                <input type="text" placeholder="dd-mm-yy">
+            </div>
+
+            <div class="booking-field">
+                <label>Check Out</label>
+                <input type="text" placeholder="dd-mm-yy">
+            </div>
+
+            <button class="booking-btn">BOOK NOW</button>
+        </div>
+
+    </div>
+
+
+
+    <!-- Section 3: Feature Section with Images and Text -->
+    <div class="feature-section">
+
+        <!-- Left Image -->
+        <div class="image-box image-one">
+            <img src="{% static 'images/food.jpg' %}" alt="Food Image">
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-box">
+            <h2>Wooden Interior With<br>The Pinch Of Everything</h2>
+            <p>
+                Enter your little slice of paradise via a wooden decked room,
+                surrounded by the lush green lawn with bird song and a bubbling creek.
+                You peek around the corner to see a hammock, BBQ, table and chairs
+                cocooned in nature..
+            </p>
+            <a href="#" class="btn-book">BOOK NOW</a>
+        </div>
+
+        <!-- Bottom Right Image -->
+        <div class="image-box image-two">
+            <img src="{% static 'images/room.jpg' %}" alt="Room Image">
+        </div>
+
+        <!-- Center Overlapping Image -->
+        <div class="image-box image-three">
+            <img src="{% static 'images/lawn.jpg' %}" alt="Lawn Image">
+        </div>
+
+        <!-- Rotating dots -->
+        <div class="dot-pattern"></div>
+
+    </div>
+
+
+    <!-- Section 4: Footer -->
+    <section class="sunshine-resort-container">
+  
+        <div class="features-bar">
+            <div class="features-grid">
+            <div class="feature-item">
+                <img src="{% static 'images/hot.png' %}" alt="Resort" style="width:50px;">
+                <p>Enjoy The most relaxing Resort</p>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'images/food.png' %}" alt="Food" style="width:50px;">
+                <p>Food restaurant shines through</p>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'images/water.png' %}" alt="View" style="width:50px;">
+                <p>Mini walk to backwater with great broader view</p>
+            </div>
+            </div>
+            <div class="features-text">
+            <h2>Life is Better Up Here!</h2>
+            <p>The Sunshine Resort, accommodations provide guests with a unique and authentic hospitality experience. We invite you to visit Sunshine Resort and fall in love with nature all over again.</p>
+            </div>
+        </div>
+
+        <div class="description-section">
+            <div class="content-left">
+            <h1>The best resort in pune for couples</h1>
+            <p>Sunshine Resort offers a stress-free holiday with our specially-designed meal plan options which provide you the best value and optimum peace of mind during your stay. Breakfast at <span style="color: #4a90e2;">Fresh Restaurant</span> is included as part of your room package.</p>
+            <a href="#" class="book-now-btn">BOOK NOW</a>
+            </div>
+            <div class="image-right">
+            <img src="{% static 'images/bottom_img.webp' %}" alt="Resort View">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
